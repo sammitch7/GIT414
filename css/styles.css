@@ -1,3 +1,50 @@
+/* <--- GLOBAL STYLES ---> */
 body {
-    background: red;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    padding: 1rem;
+}
+nav {
+    padding: 1rem;
+}
+main {
+    padding: 1rem;
+}
+footer {
+    padding: 1rem;
+}
+
+/* <--- MEDIA QUERIES ---> */
+
+/* Medium screens */
+@media only screen and (min-width: 600px) {
+    nav ul {
+        display: flex; 
+        gap: 1rem;
+    }
+    main {
+        background: yellow;
+    }
+}
+/* Large screens */
+@media only screen and (min-width: 900px) {
+    body {
+        max-width: 900px;
+        margin: auto;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    main {
+        background: blue;
+    }
+}
+/* Extra large screens */
+@media only screen and (min-width: 1200px) {
+    main {
+        background: red;
+    }
 }
